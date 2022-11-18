@@ -11,7 +11,7 @@ _file_path = pathlib.Path(__file__).parent
 with open(_file_path / "cuda/lbvh_kernels.cu", 'r') as f:
     _lbvh_src = f.read()
 
-_compile_flags = ('--std=c++11', f' -I{pathlib.Path(__file__).parent / "cuda"}',
+_compile_flags = ('--std=c++14', f' -I{pathlib.Path(__file__).parent / "cuda"}',
                   f'-I{_cuda_include}', '--use_fast_math', '--extra-device-vectorization')
 
 _construct_tree_kernels = cp.RawModule(code=_lbvh_src,

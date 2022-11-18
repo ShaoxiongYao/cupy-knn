@@ -1,5 +1,6 @@
 #pragma once
-#include <cuda/std/cmath>
+// #include <cuda/std/detail/libcxx/include/cmath>
+#include <cuda/std/climits>
 #include <cuda/std/limits>
 
 #define _min(x, y) (x < y ? x : y)

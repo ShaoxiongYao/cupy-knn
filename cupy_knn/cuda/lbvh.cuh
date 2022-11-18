@@ -1,4 +1,5 @@
 #pragma once
+#include <cuda/std/climits>
 #include <cuda/std/limits>
 #include "aabb.cuh"
 #include "morton_code.cuh"
